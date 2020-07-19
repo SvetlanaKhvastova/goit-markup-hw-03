@@ -30,11 +30,24 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
 }
-ul {
+.enumeration {
+  padding: 0;
+  margin: 0;
+
   list-style: none;
 }
+
 a {
   text-decoration: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
 }
 
 /* logo */
@@ -77,19 +90,32 @@ a {
 }
 
 /* hero */
-.hero .hero-title {
-  color: var(--secondary-text-color);
+.hero {
+  text-align: center;
+
   background-color: rgba(47, 48, 58, 0.8);
+}
+.hero .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  color: var(--secondary-text-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 .hero .button {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  border: 1px solid transparent;
+
   color: var(--secondary-text-color);
   background-color: var(--accent);
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -99,19 +125,31 @@ a {
 
 /* features */
 .features .features-title {
+  padding: 0;
+  margin: 0;
+
   color: var(--secondary-text-color);
 }
 .features .features-list {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   color: var(--title);
   text-transform: uppercase;
 }
 .features .features-text {
+  padding: 0;
+  margin: 0;
+
   font-size: 14px;
   line-height: 1.71;
 }
 
 /* activity */
 .activity-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
   color: var(--title);
   font-size: 36px;
   line-height: 1.17;
@@ -122,18 +160,45 @@ a {
   background-color: rgba(47, 48, 58, 0.8);
   text-transform: uppercase;
 }
+.desktop {
+  margin: 0;
+  padding-left: 83px;
+  padding-right: 82px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+.mobile {
+  margin: 0;
+  padding-left: 86px;
+  padding-right: 85px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+.designer {
+  margin: 0;
+  padding-left: 91px;
+  padding-right: 90px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
 
 /* team */
 .team {
   background-color: #f5f4fa;
 }
 .team .team-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
   color: var(--title);
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
 .team .team-surname {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   color: var(--title);
   font-weight: 500;
   font-size: 16px;
@@ -147,12 +212,18 @@ a {
   color: var(--accent);
 }
 .team .team-position {
+  margin-top: 0;
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 1.19;
 }
 
 /* customers */
 .customers .customers-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
   color: var(--title);
   font-size: 36px;
   line-height: 1.17;
@@ -181,6 +252,7 @@ a {
   font-size: 14px;
   line-height: 1.71;
 }
+
 .footer .footer-title {
   color: var(--secondary-text-color);
   text-transform: uppercase;
@@ -196,19 +268,31 @@ a {
 /* portfolio */
 
 .portfolio-primary .portfolio-primary-title {
+  padding: 0;
+  margin: 0;
+
   color: var(--secondary-text-color);
 }
 .portfolio .portfolio-title {
+  margin-top: 0;
+  margin-bottom: 4px;
+
   color: var(--title);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .portfolio .portfolio-filter {
+  margin-top: 0;
+  margin-bottom: 20px;
+
   font-size: 16px;
   line-height: 1.88;
 }
 .portfolio .portfolio-text {
+  padding: 0;
+  margin: 0;
+
   color: var(--secondary-text-color);
   background-color: rgba(33, 150, 243, 0.9);
   font-size: 18px;
@@ -218,6 +302,11 @@ a {
   color: var(--primary-text-color);
 }
 .button-portfolio.primary {
+  padding: 22px 6px;
+  border-radius: 4px;
+  min-width: 145px;
+  border: 1px solid transparent;
+
   color: var(--title);
   background-color: #f5f4fa;
   font-weight: 500;

@@ -57,7 +57,6 @@ a {
 }
 .logo {
   color: #000000;
-  background-color: tomato;
 
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -131,6 +130,7 @@ a {
 .hero .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
+  min-width: 692px;
 
   color: var(--secondary-text-color);
   font-weight: 900;
